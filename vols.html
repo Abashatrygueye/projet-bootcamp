@@ -23,7 +23,9 @@
   </head>
   <body>
     <header>
-        <div class="p-0 mb-0 bg-success text-white"> <p class="login"><a href="file:///C:/Users/Aba%20Shatry/Desktop/Projet-Bootcamp/connexion.html">   CONNEXION  >>  </a>  </p> </div>
+      <div class="p-0 mb-0 bg-success text-white">
+        <p class="login"><a href="./connexion.html"> CONNEXION >> </a></p>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button
           class="navbar-toggler"
@@ -36,19 +38,23 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="mymenu">
-            <a class="navbar-brand" href="#">
-                <span class="logo">SenVol</span> <span> | </span></a
-              >
+        <div class="collapse navbar-collapse" id="mymenu">
+          <a class="navbar-brand" href="#">
+            <span class="logo">SenVol</span> <span> | </span></a
+          >
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mynavbar">
             <li class="nav-item active">
-              <a class="nav-link " href="file:///C:/Users/Aba%20Shatry/Desktop/Projet-Bootcamp/index.html?#">Accueil <span> | </span></a>
+              <a class="nav-link" href="./index.html?#"
+                >Accueil <span> | </span></a
+              >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="file:///C:/Users/Aba%20Shatry/Desktop/Projet-Bootcamp/vols.html">Vols <span> | </span></a>
+              <a class="nav-link" href="./vols.html">Vols <span> | </span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="file:///C:/Users/Aba%20Shatry/Desktop/Projet-Bootcamp/hotel.html">Hôtels <span> | </span></a>
+              <a class="nav-link" href="./hotel.html"
+                >Hôtels <span> | </span></a
+              >
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Découverte </a>
@@ -69,110 +75,143 @@
       </nav>
     </header>
 
-        <div class="row">
-            <img src="assets/vol-img.jpg" alt="">
-        </div>
+    <div class="row">
+      <img src="assets/vol-img.jpg" alt="" />
+    </div>
 
-       <div class="row">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <p class="vol-reservation">FAITES VOS RÉSERVATIONS</p>
+        <form>
+          <!-- mes botons radios à coché -->
 
-        <div class="col-2"></div>
-        <div class="col-8">
-            <p class="vol-reservation">FAITES VOS RÉSERVATIONS</p>
-            <form>
-                    <!-- mes botons radios à coché -->
+          <div class="row">
+            <div class="col-6">
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customSwitch1"
+                />
+                <label class="custom-control-label" for="customSwitch1"
+                  >Aller-retour</label
+                >
+              </div>
+            </div>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1">Aller-retour</label>
-                            </div>
-                        </div>
+            <div class="col-6">
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customSwitch2"
+                />
+                <label class="custom-control-label" for="customSwitch2"
+                  >Aller-simple</label
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">
+              <span class="label-bold"> Ville de départ</span>
+            </label>
+            <select
+              class="form-control"
+              id="exampleFormControlSelect1"
+              placeholder=""
+            >
+              <option>Départ de ...</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">
+              <span class="label-bold">Destination</span>
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Arrivée à ...</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
 
-                        <div class="col-6">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                <label class="custom-control-label" for="customSwitch2">Aller-simple</label>
-                            </div>
-                        </div>
-                    </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">
+              <span class="label-bold">Date de retour</span>
+            </label>
+            <input
+              type="date"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
 
-               
+          <div class="form-group">
+            <label for="exampleFormControlInput1">
+              <span class="label-bold"> Date de départ</span>
+            </label>
+            <input
+              type="date"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">
+              <span class="label-bold">Classe</span></label
+            >
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Economie</option>
+              <option>Eco prémium</option>
+              <option>Business</option>
+            </select>
+          </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1"> <span class="label-bold"> Ville de départ</span> </label>
-                  <select class="form-control" id="exampleFormControlSelect1" placeholder="">
-                    <option>Départ de ...</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1"> <span class="label-bold">Destination</span> </label>
-                    <select class="form-control" id="exampleFormControlSelect1" >
-                      <option>Arrivée à ...</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">
+              <span class="label-bold">Nombre de passager</span></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="exampleFormControlInput1"
+              max="9"
+              min="1"
+              placeholder="3..."
+            />
+          </div>
 
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1"> <span class="label-bold">Date de retour</span> </label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
+          <button class="btn btn-outline-success" type="submit" id="btn-vols">
+            Valider
+          </button>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
 
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1"> <span class="label-bold"> Date de départ</span> </label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1"> <span class="label-bold">Classe</span></label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Economie</option>
-                      <option>Eco prémium</option>
-                      <option>Business</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1"> <span class="label-bold">Nombre de passager</span></label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" max="9"  min="1" placeholder="3...">
-                  </div>
-
-                  <button class="btn btn-outline-success" type="submit" id="btn-vols"> Valider </button>
-              </form>
-        </div>
-        <div class="col-2"></div>
-       </div>
-
-   
-
-
-<footer>
-<div class="footer">  <p><a href="#" class="myFooterContact"> Contact |</a> <a href="#" class="myFooterContact">A propos |</a> © 2021 Powered By Ababacar Gueye and Jean Paul Sagna</p></div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+      <div class="footer">
+        <p>
+          <a href="#" class="myFooterContact"> Contact |</a>
+          <a href="#" class="myFooterContact">A propos |</a> &copy; 2021 Powered
+          By Ababacar Gueye and Jean Paul Sagna
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
